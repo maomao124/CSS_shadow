@@ -1,0 +1,36 @@
+/*
+  Project name(项目名称)：CSS_shadow 
+  File name(文件名): t2
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/7 
+  Time(创建时间)： 12:48
+  Version(版本): 1.0
+  Description(描述)： 无
+ */
+
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #CCC;
+    float: left;
+    margin: 5px;
+}
+
+div.one {
+    box-shadow: 2px 2px 5px #000;
+}
+
+div.two {
+    box-shadow: 2px 2px 5px #000 inset;
+}
+
+div.three {
+    margin-left: 10px;
+    box-shadow: 0px 0px 0px 3px #bb0a0a,
+    0px 0px 0px 6px #2e56bf,
+    0px 0px 0px 9px #ea982e;
+}
