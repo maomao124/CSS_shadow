@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：CSS_shadow
+  File name(文件名): test3
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/7
+  Time(创建时间)： 12:53
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: skyblue;
+        }
+
+        div.b {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*border: 10px solid coral;*/
+            transform: translate(-50%, -50%);
+        }
+
+        .tip {
+            width: 200px;
+            height: 200px;
+            background: aquamarine;
+            position: absolute;
+            border: 1px solid;
+            border-radius: 10px;
+            opacity: .5;
+            text-align: center;
+            font-size: 30px;
+            color: brown;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            /* perspective: 800px; */
+            position: relative;
+            animation: add 2.5s linear infinite;
+        }
+
+        @keyframes add {
+            0% {
+                transform: rotateX(100%) rotateY(100%)
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg)
+            }
+        }
+
+        .left {
+            transform: rotate(90deg) translateZ(100px)
+        }
+
+        .right {
+            transform: rotateY(-90deg) translateZ(-100px)
+        }
+
+        .font {
+            transform: translateZ(100px)
+        }
+
+        .back {
+            transform: rotateX(180deg) translateZ(100px)
+        }
+
+        .top {
+            transform: rotateX(-90deg) translateZ(100px)
+        }
+
+        .bottom {
+            transform: rotateY(-90deg) translateZ(100px)
+        }
+    </style>
+</head>
+<body>
+
+<div class="b">
+    <div class="box">
+        <div class="tip left"></div>
+        <div class="tip right"></div>
+        <div class="tip font"></div>
+        <div class="tip back"></div>
+        <div class="tip top"></div>
+        <div class="tip bottom"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
